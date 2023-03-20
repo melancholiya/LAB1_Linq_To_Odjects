@@ -3,25 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
 namespace LAB1
 {
     public class Journal
     {
-        public int _id { get; set; }
-        public string _name { get; set; }
+        //name convention c# code convention 
+        // private int _id; 
+        public int ID { get; set; }
+        public string Name { get; set; }
 
-        public string _frequency { get; set; }
+        public string Frequency { get; set; }
 
-        public DateTime _releaseDate { get; set; }
+        public DateTime ReleaseDate { get; set; }
 
-        public uint _circulation { get; set; }
+        public int Circulation { get; set; }
+
+
 
         public override string ToString()
         {
-            return $"Name:{_name}"+
-                   $"Frequency:{_frequency}"+
-                   $"ReleaseDate:{_releaseDate}"+
-                   $"Circulation:{_circulation}";
+            return $"Name:{Name} \t"+
+                   $"Frequency:{Frequency}\t"+
+                   $"ReleaseDate:{ReleaseDate}\t"+
+                   $"Circulation:{Circulation}";
         }
 
     }

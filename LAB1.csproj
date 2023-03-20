@@ -40,12 +40,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Article.cs" />
-    <Compile Include="DateList.cs" />
-    <Compile Include="Author.cs" />
-    <Compile Include="Journal.cs" />
+    <Compile Include="CommandNumber.cs" />
+    <Compile Include="Classes\Article.cs" />
+    <Compile Include="Classes\Organization.cs" />
+    <Compile Include="IRun.cs" />
+    <Compile Include="Output\IOutput.cs" />
+    <Compile Include="Output\Output.cs" />
+    <Compile Include="Requests\IRequests.cs" />
+    <Compile Include="Relationship\ArticleAuthor.cs" />
+    <Compile Include="Relationship\ArticleJournal.cs" />
+    <Compile Include="Date\DataList.cs" />
+    <Compile Include="Classes\Author.cs" />
+    <Compile Include="Date\IDBContext.cs" />
+    <Compile Include="Classes\Journal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests\Requests.cs" />
+    <Compile Include="Run.cs" />
+    <Compile Include="ServiceCollection.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

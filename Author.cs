@@ -7,16 +7,15 @@ namespace LAB1
 {
     public class Author
     {
-        public int _id { get; set; }
-        public string _firstName { get; set; }
-        public string _secondName { get; set; }
-        public string _surname { get; set; }
-        public string _organization { get; set; }
+        public int ID { get; set; }
+        public string FirstName { get; set; }
+        public string SecondName { get; set; }
+        public int OrganizationID { get; set; }
+
 
         public override string ToString()
         {
-            return $"Name:{_firstName} {_secondName} {_surname}"+
-                   $"Organazation:{_organization}";
+            return $"Name:{_firstName} {_secondName}\t працює в:\t {_organization}";
         }
     }
 }
